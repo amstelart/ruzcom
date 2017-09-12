@@ -1,0 +1,63 @@
+// В этом файле должны быть стили для БЭМ-блока product-nav, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.product-nav {
+
+  $block-name:                &; // #{$block-name}__element {}
+  @include container;
+  font-family: 'Melo';
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__item {
+    color: #f9f288;
+    text-decoration: none;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    &--sausage {
+      #{$block-name}__text {
+        @include sprite($flag-sausage);
+        line-height: 43px;
+      }
+      #{$block-name}__img {
+        @include sprite($icon-sausage);
+      }
+    }
+    &--delicacy {
+      #{$block-name}__text {
+        @include sprite($flag-delicacy);
+        line-height: 32px;
+      }
+      #{$block-name}__img {
+        @include sprite($icon-delicacy);
+      }
+    }
+    &--conserve {
+      #{$block-name}__text {
+        @include sprite($flag-conserve);
+        line-height: 36px;
+      }
+      #{$block-name}__img {
+        @include sprite($icon-conserve);
+      }
+    }
+    &--prepack {
+      #{$block-name}__text {
+        @include sprite($flag-prepack);
+        line-height: 42px;
+      }
+      #{$block-name}__img {
+        @include sprite($icon-prepack);
+      }
+    }
+  }
+  &__img {
+    margin-right: 10px;
+  }
+  &__text {
+    text-align: center;
+    font-size: 20px;
+  }
+}
