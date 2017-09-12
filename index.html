@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      <header class="page-header" role="banner">
+        <div class="main-nav-wrap">
+          <nav id="main-nav" class="main-nav" role="navigation">
+            <a href="/" class="logo">
+              <img src="img/logo.png" alt="logo">
+            </a>
+            <div id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></div>
+            <ul class="main-nav__list">
+              <li class="main-nav__item  main-nav__item--active">
+                <a href="#" class="main-nav__link">
+                  Главная
+                </a>
+                <!-- <div class="main-nav__lvl  main-nav__lvl--2">
+                  <ul class="main-nav__list  main-nav__list--lvl-2">
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        Контакты
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        Услуги
+                      </a>
+                      <div class="main-nav__lvl  main-nav__lvl--3">
+                        <ul class="main-nav__list  main-nav__list--lvl-3">
+                          <li class="main-nav__item  main-nav__item--lvl-3">
+                            <a href="" class="main-nav__link  main-nav__link--lvl-3">
+                              Вёрстка HTML-CSS
+                            </a>
+                          </li>
+                          <li class="main-nav__item  main-nav__item--lvl-3">
+                            <a href="" class="main-nav__link  main-nav__link--lvl-3">
+                              Стриптиз
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div> -->
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Каталог
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Контроль качества
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Партнерам
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Вакансии
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="product-nav">
+          <a href="#" class="product-nav__item product-nav__item--sausage">
+            <div class="product-nav__img"></div>
+            <div class="product-nav__text">Колбасная продукция</div>
+          </a>
+          <a href="#" class="product-nav__item product-nav__item--delicacy">
+            <div class="product-nav__img"></div>
+            <div class="product-nav__text">Мясные деликатесы</div>
+          </a>
+          <a href="#" class="product-nav__item product-nav__item--conserve">
+            <div class="product-nav__img"></div>
+            <div class="product-nav__text">Консервы</div>
+          </a>
+          <a href="#" class="product-nav__item product-nav__item--prepack">
+            <div class="product-nav__img"></div>
+            <div class="product-nav__text">Полуфабрикаты</div>
+          </a>
+        </div>
+      </header>
+
+
+      <main role="main">
+
+        <h1>NTH start project</h1>
+
+        <p><a href="blocks-demo.html">Страница с демкой компонентов</a></p>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer-container">
+          <ul class="menu menu--footer al-right">
+            <li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Каталог</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Контроль качества</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Вакансии</a></li>
+          </ul>
+          <ul class="menu menu--footer">
+            <li class="menu__item"><span class="menu__link">Партнерам:</span>
+              <ul>
+                <li><a class="menu__link" href="#">Поставщикам</a></li>
+                <li><a class="menu__link" href="#">Покупателям</a></li>
+              </ul>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="page-footer__info">
+          <p class="page-footer__copyright">&copy; ЗАО &laquo;Лыткаринский мясоперерабатывающий завод&raquo;, 2017</p>
+          <p class="page-footer__dev">Разработка &#8212; <a href="http://www.2showbiz.ru/">Showbiz Studio</a></p>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
