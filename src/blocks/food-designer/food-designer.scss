@@ -1,0 +1,26 @@
+// В этом файле должны быть стили для БЭМ-блока food-designer, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.food-designer {
+
+  $block-name:                &; // #{$block-name}__element {}
+  background-image: url("../img/food-designer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px 0;
+  margin: 15px 0;
+  &__wrap {
+    @include container;
+  }
+  &__calculation-col {
+    color: #fff;
+  }
+  &__result-col {
+
+  }
+  &__title {
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+}

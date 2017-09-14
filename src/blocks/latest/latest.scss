@@ -1,0 +1,62 @@
+// В этом файле должны быть стили для БЭМ-блока product, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.latest {
+
+  $block-name:                &; // #{$block-name}__element {}
+
+  // background: #e3dbc8;
+  padding: 60px 0 120px;
+
+  &__wrap {
+    @include container;
+  }
+  &__title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.latest-card__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  .card {
+    padding: 20px;
+    flex-basis: 32%;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    &:hover {
+      border: 2px dashed #fff;
+      cursor: pointer;
+    }
+    &__name {
+      color: #fff;
+      text-align: center;
+    }
+    &__title {
+      font-weight: 400;
+      font-size: 24px;
+      font-family: "Melo";
+      line-height: 32px;
+    }
+    &__photo {
+      box-shadow: 0px 3px 6.09px 0.91px rgba(0, 0, 0, 0.35);
+      border: 4px solid #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      padding-bottom: 60%;
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

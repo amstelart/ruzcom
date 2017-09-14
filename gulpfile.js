@@ -388,7 +388,7 @@ gulp.task('serve', ['build'], function() {
   browserSync.init({
     server: dirs.buildPath,
     startPath: 'index.html',
-    open: true,
+    open: false,
     port: 8080,
   });
   // Слежение за стилями

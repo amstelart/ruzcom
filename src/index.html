@@ -14,15 +14,173 @@
 
     <div class="page__content">
 
-      @@include('blocks/page-header/page-header.html')
+      <!--DEV
 
-      <main role="main">
+      Нужно убрать пробел между @-ами:
+
+      @ @include('blocks/page-header/page-header.html')
+
+      -->
+      <header class="page-header" role="banner">
+        <div class="main-nav-wrap">
+          <nav id="main-nav" class="main-nav" role="navigation">
+            <a href="/" class="logo">
+              <img src="img/logo.png" alt="logo">
+            </a>
+            <div id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></div>
+            <ul class="main-nav__list">
+              <li class="main-nav__item  main-nav__item--active">
+                <a href="#" class="main-nav__link">
+                  Главная
+                </a>
+                <!-- <div class="main-nav__lvl  main-nav__lvl--2">
+                  <ul class="main-nav__list  main-nav__list--lvl-2">
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        Контакты
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        Услуги
+                      </a>
+                      <div class="main-nav__lvl  main-nav__lvl--3">
+                        <ul class="main-nav__list  main-nav__list--lvl-3">
+                          <li class="main-nav__item  main-nav__item--lvl-3">
+                            <a href="" class="main-nav__link  main-nav__link--lvl-3">
+                              Вёрстка HTML-CSS
+                            </a>
+                          </li>
+                          <li class="main-nav__item  main-nav__item--lvl-3">
+                            <a href="" class="main-nav__link  main-nav__link--lvl-3">
+                              Стриптиз
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div> -->
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Каталог
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Контроль качества
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Партнерам
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Вакансии
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="second-nav">
+          <a href="#" class="second-nav__item second-nav__item--sausage">
+            <div class="second-nav__img"></div>
+            <div class="second-nav__text">Колбасная продукция</div>
+          </a>
+          <a href="#" class="second-nav__item second-nav__item--delicacy">
+            <div class="second-nav__img"></div>
+            <div class="second-nav__text">Мясные деликатесы</div>
+          </a>
+          <a href="#" class="second-nav__item second-nav__item--conserve">
+            <div class="second-nav__img"></div>
+            <div class="second-nav__text">Консервы</div>
+          </a>
+          <a href="#" class="second-nav__item second-nav__item--prepack">
+            <div class="second-nav__img"></div>
+            <div class="second-nav__text">Полуфабрикаты</div>
+          </a>
+        </div>
+        <div class="main-slider">
+          <div class="main-slider__wrap">
+            <div class="main-slider__item">
+              <div class="main-slider__col main-slider__col--left">
+                <div class="main-slider__image">
+                  <img src="img/ms-image-01.png" alt="Бутер">
+                </div>
+                <div class="main-slider__recipe">
+                  <ul>
+                    <li>Половину багета смазать сливочным маслом</li>
+                    <li>Выложить на нее листья, ломтики ветчины и сыра</li>
+                    <li>Выложить сверху порезанный кружочками помидор</li>
+                    <li>Накрыть другой половинкой багета</li>
+                  </ul>
+                  <p>Багет с ветчиной "Рузком", помидорами и сыром готов!</p>
+                </div>
+              </div>
+              <div class="main-slider__col main-slider__col--right">
+                <h2 class="main-slider__title">Багет с ветчиной, помидорами и сыром</h2>
+                <div class="ingredients">
+                    <h4 class="ingredients__title">Ингридиенты</h4>
+                    <ul class="ingredients__list">
+                      <li class="ingredients__item">
+                        <span class="ingredients__item-name">Багет</span>
+                        <span class="ingredients__item-dots"></span>
+                        <span class="ingredients__item-qt">1 шт.</span>
+                      </li>
+                      <li class="ingredients__item">
+                        <span class="ingredients__item-name">Сливочное масло</span>
+                        <span class="ingredients__item-dots"></span>
+                        <span class="ingredients__item-qt">25 г</span>
+                      </li>
+                      <li class="ingredients__item">
+                        <span class="ingredients__item-name">Ветчина "<span class="color">Рузком</span>"</span>
+                        <span class="ingredients__item-dots"></span>
+                        <span class="ingredients__item-qt">2 ломтика</span>
+                      </li>
+                      <li class="ingredients__item">
+                        <span class="ingredients__item-name">Сыр</span>
+                        <span class="ingredients__item-dots"></span>
+                        <span class="ingredients__item-qt">1 ломтик</span>
+                      </li>
+                      <li class="ingredients__item">
+                        <span class="ingredients__item-name">Помидор</span>
+                        <span class="ingredients__item-dots"></span>
+                        <span class="ingredients__item-qt">1/2 шт.</span>
+                      </li>
+                      <li class="ingredients__item">
+                        <span class="ingredients__item-name">Листья салата</span>
+                        <span class="ingredients__item-dots"></span>
+                        <span class="ingredients__item-qt">2 шт.</span>
+                      </li>
+
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      @@include('blocks/product/product.html')
+      @@include('blocks/latest/latest.html')
+      @@include('blocks/food-designer/food-designer.html')
+      @@include('blocks/main-video/main-video.html')
+
+      <!-- <main role="main">
 
         <h1>NTH start project</h1>
 
         <p><a href="blocks-demo.html">Страница с демкой компонентов</a></p>
 
-      </main>
+      </main> -->
 
     </div>
 

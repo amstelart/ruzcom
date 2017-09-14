@@ -58,7 +58,16 @@
     "tabs": [],
     "object-fit-polyfill": [],
     "embed-responsive": [],
-    "product-nav": []
+    "second-nav": [],
+    "main-slider": [],
+    "product": [],
+    "product-nav": [],
+    "card": [],
+    "latest": [],
+    "food": [],
+    "food-designer": [],
+    "food-calculate": [],
+    "main-video": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

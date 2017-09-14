@@ -1,0 +1,28 @@
+// В этом файле должны быть стили для БЭМ-блока main-video, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.main-video {
+
+  $block-name:                &; // #{$block-name}__element {}
+  padding-bottom: 120px;
+  background-image: url("../img/main-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__wrap {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card {
+    color: #fff;
+    flex-basis: 49%;
+    &__name {
+      text-align: center;
+    }
+    &__title {
+      font-family: "Melo";
+    }
+  }
+}
