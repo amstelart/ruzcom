@@ -20,6 +20,42 @@
         color: #fff;
       }
     }
+    &:not(:last-child) {
+      padding-right: 30px;
+      position: relative;
+      &:after {
+        content: '';
+        @include sprite($nav-arrow);
+        position: absolute;
+        right: 0;
+        top:9px;
+        display: inline-block;
+      }
+    }
+    &:first-child {
+      position: relative;
+      padding-left: 29px;
+      &:before {
+        content: '';
+        @include sprite($nav-arrow-left);
+        position: absolute;
+        left: 0;
+        top:9px;
+        display: inline-block;
+      }
+    }
+    &:last-child {
+      position: relative;
+      padding-right: 29px;
+      &:after {
+        content: '';
+        @include sprite($nav-arrow-right);
+        position: absolute;
+        right: 0;
+        top:9px;
+        display: inline-block;
+      }
+    }
   }
   &__link {
     border: 1px solid #5d1900;

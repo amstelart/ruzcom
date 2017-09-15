@@ -6,17 +6,71 @@
 
   $block-name:                &; // #{$block-name}__element {}
 
-  // background: #e3dbc8;
+  background-image: url("../img/main-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
   padding: 60px 0 120px;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 166px;
+    height: 437px;
+    background-image: url("../img/latest-pic-left.png");
+    background-repeat: no-repeat;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+    width: 280px;
+    height: 456px;
+    background-image: url("../img/latest-pic-right.png");
+    background-repeat: no-repeat;
+  }
 
   &__wrap {
     @include container;
+    position: relative;
+    z-index: 2;
   }
   &__title {
     text-transform: uppercase;
     color: #fff;
     font-size: 30px;
     text-align: center;
+    overflow-x: hidden;
+    span {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 2px;
+        background: url("../img/dashed-bg.png");
+        background-repeat: repeat-x;
+        top: 16px;
+        width: 1000px;
+        right: 100%;
+        margin-right: 15px;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 2px;
+        background: url("../img/dashed-bg.png");
+        background-repeat: repeat-x;
+        top: 16px;
+        width: 1000px;
+        left: 100%;
+        margin-left: 15px;
+      }
+    }
   }
 }
 

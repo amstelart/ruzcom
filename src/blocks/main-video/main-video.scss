@@ -5,10 +5,33 @@
 .main-video {
 
   $block-name:                &; // #{$block-name}__element {}
-  padding-bottom: 120px;
+  padding: 60px 0 120px;
   background-image: url("../img/main-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 76px;
+    background-image: url("../img/main-video-pic-01.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -37px;
+    width: 178px;
+    height: 189px;
+    background-image: url("../img/main-video-pic-02.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
 
   &__wrap {
     @include container;

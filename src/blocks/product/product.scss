@@ -6,7 +6,9 @@
 
   $block-name:                &; // #{$block-name}__element {}
 
-  background: #e3dbc8;
+  background-image: url("../img/products-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 60px 0 120px;
 
   &__wrap {
@@ -17,6 +19,34 @@
     color: #5d1900;
     font-size: 30px;
     text-align: center;
+    overflow-x: hidden;
+    span {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 2px;
+        background: url("../img/dashed-bg--color.png");
+        background-repeat: repeat-x;
+        top: 16px;
+        width: 1000px;
+        right: 100%;
+        margin-right: 15px;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 2px;
+        background: url("../img/dashed-bg--color.png");
+        background-repeat: repeat-x;
+        top: 16px;
+        width: 1000px;
+        left: 100%;
+        margin-left: 15px;
+      }
+    }
   }
 }
 

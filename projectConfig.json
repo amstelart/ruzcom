@@ -67,7 +67,8 @@
     "food": [],
     "food-designer": [],
     "food-calculate": [],
-    "main-video": []
+    "main-video": [],
+    "s-product": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
