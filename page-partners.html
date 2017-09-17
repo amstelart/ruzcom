@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__body">
+
+      <header class="page-header" role="banner">
+        <div class="main-nav-wrap">
+          <nav id="main-nav" class="main-nav" role="navigation">
+            <a href="/" class="logo">
+              <img src="img/logo.png" alt="logo">
+            </a>
+            <div id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></div>
+            <ul class="main-nav__list">
+              <li class="main-nav__item  main-nav__item--active">
+                <a href="index.html" class="main-nav__link">
+                  Главная
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-catalog--category.html" class="main-nav__link">
+                  Каталог
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-quality-control.html" class="main-nav__link">
+                  Контроль качества
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-partners.html" class="main-nav__link">
+                  Партнерам
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-vacancy.html" class="main-nav__link">
+                  Вакансии
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-contacts.html" class="main-nav__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+
+        <div class="second-nav">
+          <a href="#" class="second-nav__item second-nav__item--sausage">
+            <div class="second-nav__img"></div>
+            <div class="second-nav__text">Колбасная продукция</div>
+          </a>
+          <a href="#" class="second-nav__item second-nav__item--delicacy">
+            <div class="second-nav__img"></div>
+            <div class="second-nav__text">Мясные деликатесы</div>
+          </a>
+          <a href="#" class="second-nav__item second-nav__item--conserve">
+            <div class="second-nav__img"></div>
+            <div class="second-nav__text">Консервы</div>
+          </a>
+          <a href="#" class="second-nav__item second-nav__item--prepack">
+            <div class="second-nav__img"></div>
+            <div class="second-nav__text">Полуфабрикаты</div>
+          </a>
+        </div>
+
+      </header>
+
+      <main class="page-content" role="main">
+
+        <h1 class="page-content__title"><span>Поставщикам</span></h1>
+
+        <p>Идейные соображения высшего порядка, а также консультация с широким активом играет важную роль в формировании дальнейших направлений развития. С другой стороны постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание модели развития. Разнообразный и богатый опыт рамки и место обучения кадров в значительной степени обуславливает создание дальнейших направлений развития. Равным образом рамки и место обучения кадров требуют определения и уточнения соответствующий условий активизации. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Разнообразный и богатый опыт новая модель организационной деятельности требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач.</p>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer-container">
+          <ul class="menu menu--footer al-right">
+            <li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Каталог</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Контроль качества</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Вакансии</a></li>
+          </ul>
+          <ul class="menu menu--footer">
+            <li class="menu__item"><span class="menu__link">Партнерам:</span>
+              <ul>
+                <li><a class="menu__link" href="#">Поставщикам</a></li>
+                <li><a class="menu__link" href="#">Покупателям</a></li>
+              </ul>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="page-footer__info">
+          <p class="page-footer__copyright">&copy; ЗАО &laquo;Лыткаринский мясоперерабатывающий завод&raquo;, 2017</p>
+          <p class="page-footer__dev">Разработка &#8212; <a href="http://www.2showbiz.ru/">Showbiz Studio</a></p>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
