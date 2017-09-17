@@ -6,11 +6,14 @@
 
   $block-name:                &; // #{$block-name}__element {}
 
-  background-image: url("../img/products-bg.jpg");
+  background-image: url("../img/products-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 60px 0 120px;
-
+  position: relative;
+  z-index: 1;
+  margin-top: -55px;
+  margin-bottom: -55px;
   &__wrap {
     @include container;
   }

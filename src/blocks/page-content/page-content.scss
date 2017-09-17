@@ -1,0 +1,46 @@
+// В этом файле должны быть стили для БЭМ-блока page-content, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.page-content {
+
+  $block-name:                &; // #{$block-name}__element {}
+  @include container;
+
+  &__title {
+    text-transform: uppercase;
+    color: #5d1900;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    overflow-x: hidden;
+    span {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 2px;
+        background: url("../img/dashed-bg--color.png");
+        background-repeat: repeat-x;
+        top: 16px;
+        width: 1000px;
+        right: 100%;
+        margin-right: 15px;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 2px;
+        background: url("../img/dashed-bg--color.png");
+        background-repeat: repeat-x;
+        top: 16px;
+        width: 1000px;
+        left: 100%;
+        margin-left: 15px;
+      }
+    }
+  }
+
+}

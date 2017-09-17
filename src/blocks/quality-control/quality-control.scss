@@ -1,0 +1,30 @@
+// В этом файле должны быть стили для БЭМ-блока quality-control, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.quality-control {
+
+  $block-name:                &; // #{$block-name}__element {}
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__col {
+    width: 100%;
+    @media (min-width: $screen-lg) {
+      &--content {
+        width: 60%;
+        padding-right: 35px;
+      }
+      &--video {
+        width: 40%;
+      }
+    }
+  }
+
+  &__video {
+    margin-bottom: 60px;
+  }
+
+}

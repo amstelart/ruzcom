@@ -2,11 +2,28 @@
 
 Для использования этого файла как шаблона:
 
-@ @include('blocks/product-nav/product-nav.html')
+@ @include('blocks/second-nav/second-nav.html')
 
 (Нужно убрать пробел между символами @)
 Подробнее: https://www.npmjs.com/package/gulp-file-include
 
 -->
 
-<div class="product-nav">content</div>
+<div class="second-nav">
+  <a href="#" class="second-nav__item second-nav__item--sausage">
+    <div class="second-nav__img"></div>
+    <div class="second-nav__text">Колбасная продукция</div>
+  </a>
+  <a href="#" class="second-nav__item second-nav__item--delicacy">
+    <div class="second-nav__img"></div>
+    <div class="second-nav__text">Мясные деликатесы</div>
+  </a>
+  <a href="#" class="second-nav__item second-nav__item--conserve">
+    <div class="second-nav__img"></div>
+    <div class="second-nav__text">Консервы</div>
+  </a>
+  <a href="#" class="second-nav__item second-nav__item--prepack">
+    <div class="second-nav__img"></div>
+    <div class="second-nav__text">Полуфабрикаты</div>
+  </a>
+</div>

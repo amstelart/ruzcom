@@ -12,7 +12,7 @@
 
   <div class="page__inner">
 
-    <div class="page__content">
+    <div class="page__body">
 
       <!--DEV
 
@@ -23,91 +23,9 @@
       -->
       <header class="page-header" role="banner">
         <div class="main-nav-wrap">
-          <nav id="main-nav" class="main-nav" role="navigation">
-            <a href="/" class="logo">
-              <img src="img/logo.png" alt="logo">
-            </a>
-            <div id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></div>
-            <ul class="main-nav__list">
-              <li class="main-nav__item  main-nav__item--active">
-                <a href="#" class="main-nav__link">
-                  Главная
-                </a>
-                <!-- <div class="main-nav__lvl  main-nav__lvl--2">
-                  <ul class="main-nav__list  main-nav__list--lvl-2">
-                    <li class="main-nav__item  main-nav__item--lvl-2">
-                      <a href="" class="main-nav__link  main-nav__link--lvl-2">
-                        Контакты
-                      </a>
-                    </li>
-                    <li class="main-nav__item  main-nav__item--lvl-2">
-                      <a href="" class="main-nav__link  main-nav__link--lvl-2">
-                        Услуги
-                      </a>
-                      <div class="main-nav__lvl  main-nav__lvl--3">
-                        <ul class="main-nav__list  main-nav__list--lvl-3">
-                          <li class="main-nav__item  main-nav__item--lvl-3">
-                            <a href="" class="main-nav__link  main-nav__link--lvl-3">
-                              Вёрстка HTML-CSS
-                            </a>
-                          </li>
-                          <li class="main-nav__item  main-nav__item--lvl-3">
-                            <a href="" class="main-nav__link  main-nav__link--lvl-3">
-                              Стриптиз
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
-                </div> -->
-              </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link">
-                  Каталог
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link">
-                  Контроль качества
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link">
-                  Партнерам
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link">
-                  Вакансии
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link">
-                  Контакты
-                </a>
-              </li>
-            </ul>
-          </nav>
+          @@include('blocks/main-nav/main-nav.html')
         </div>
-        <div class="second-nav">
-          <a href="#" class="second-nav__item second-nav__item--sausage">
-            <div class="second-nav__img"></div>
-            <div class="second-nav__text">Колбасная продукция</div>
-          </a>
-          <a href="#" class="second-nav__item second-nav__item--delicacy">
-            <div class="second-nav__img"></div>
-            <div class="second-nav__text">Мясные деликатесы</div>
-          </a>
-          <a href="#" class="second-nav__item second-nav__item--conserve">
-            <div class="second-nav__img"></div>
-            <div class="second-nav__text">Консервы</div>
-          </a>
-          <a href="#" class="second-nav__item second-nav__item--prepack">
-            <div class="second-nav__img"></div>
-            <div class="second-nav__text">Полуфабрикаты</div>
-          </a>
-        </div>
+        @@include('blocks/second-nav/second-nav.html')
         <div class="main-slider">
           <div class="main-slider__wrap">
             <div class="main-slider__item">

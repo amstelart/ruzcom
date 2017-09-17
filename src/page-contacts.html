@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__body">
+
+      <header class="page-header" role="banner">
+        <div class="main-nav-wrap">
+          @@include('blocks/main-nav/main-nav.html')
+        </div>
+        @@include('blocks/second-nav/second-nav.html')
+      </header>
+
+      <main class="page-content" role="main">
+
+        <h1 class="page-content__title"><span>Контакты</span></h1>
+
+        <div class="contacts">
+          <div class="contacts__row">
+            <div class="contacts__col contacts__col--info">
+              <div class="contacts__item contacts__item--adres">
+                <p><strong>Адрес:</strong> Россия, Московская область, Лыткарино, 6-й микрорайон, 4А</p>
+              </div>
+              <div class="contacts__item contacts__item--phone">
+                <p><strong>Секретариат:</strong> +7 (495) 552-33-03</p>
+                <p><strong>Отдел закупок:</strong> +7 (495) 552-33-03</p>
+                <p><strong>Отдел кадров:</strong> +7 (495) 552-33-03</p>
+                <p><strong>Отдел продаж:</strong> +7 (495) 552-33-03</p>
+                <p><strong>Склад колбасы:</strong> +7 (495) 552-33-03</p>
+                <p><strong>Склад консервов:</strong> +7 (495) 552-33-03</p>
+              </div>
+              <div class="contacts__item contacts__item--mail">
+                <p><strong>e-mail:</strong> <a href="mailto:pochta@mail.ru">pochta@mail.ru</a></p>
+              </div>
+            </div>
+            <div class="contacts__col contacts__col--image">
+              <img src="img/contacts-image.jpg" alt="Рузком">
+            </div>
+          </div>
+          <div class="contacts__row">
+            <div class="contacts__col contacts__col--map">
+              <div class="contacts__map-card">
+                <h3 class="contacts__map-title">Схема проезда к заводу (проходная)</h3>
+                <div class="contacts__map"></div>
+              </div>
+            </div>
+            <div class="contacts__col contacts__col--map">
+              <div class="contacts__map-card">
+                <h3 class="contacts__map-title">Проезд на загрузку</h3>
+                <div class="contacts__map"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

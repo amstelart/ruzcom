@@ -6,10 +6,10 @@ $gray-lighter:                hsl(0, 0%, 80%) !default;
 $gray-lightest:               hsl(0, 0%, 90%) !default;
 
 $font-family:                 'PT Sans', 'Arial', sans-serif;
-$font-family--headings:       $font-family !default;
+$font-family--headings:       $font-family;
 $font-family--monospace:      'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace !default;
 
-$font-size:                   14px !default;
+$font-size:                   18px;
 $font-size--h1:               2.25em !default;
 $font-size--h2:               1.875em !default;
 $font-size--h3:               1.5em !default;
@@ -27,8 +27,6 @@ $screen-sm:                   480px !default;
 
 $border-radius:               3px !default;
 
-
-
 // @font-face {
 //   font-family: 'FONTNAME';
 //   src: url('../fonts/FONTNAME.woff2') format('woff2'),
@@ -45,8 +43,6 @@ $border-radius:               3px !default;
   font-weight: 400;
   font-style: normal;
 }
-
-
 
 body {
   font-family: $font-family;
