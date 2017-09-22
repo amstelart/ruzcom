@@ -12,15 +12,8 @@
 
   <div class="page__inner">
 
-    <div class="page__content">
+    <div class="page__body">
 
-      <!--DEV
-
-      Нужно убрать пробел между @-ами:
-
-      @ @include('blocks/page-header/page-header.html')
-
-      -->
       <header class="page-header" role="banner">
         <div class="main-nav-wrap">
           @@include('blocks/main-nav/main-nav.html')
@@ -28,11 +21,119 @@
         @@include('blocks/second-nav/second-nav.html')
       </header>
 
-      <main role="main">
+      <main class="page-content" role="main">
 
-        <h1>NTH start project</h1>
+        <h1 class="page-content__title"><span>Каталог</span></h1>
 
-        <p><a href="blocks-demo.html">Страница с демкой компонентов</a></p>
+        <!-- catalog -->
+        <div class="catalog">
+          <!-- catalog sidebar -->
+          <div class="catalog__sidebar">
+            <nav class="catalog-nav" role="navigation">
+              <ul class="catalog-nav__list">
+                <li class="catalog-nav__item catalog-nav__item--active">
+                  <a href="#" class="catalog-nav__link">Колбасная продукция</a>
+                  <div class="catalog-nav__lvl catalog-nav__lvl--2">
+                    <ul class="catalog-nav__list catalog-nav__list--lvl-2">
+                      <li class="catalog-nav__item catalog-nav__item--lvl-2">
+                        <a href="#" class="catalog-nav__link catalog-nav__link--lvl-2">Колбасы варено-копченые и полукопчеые</a>
+                      </li>
+                      <li class="catalog-nav__item catalog-nav__item--lvl-2">
+                        <a href="#" class="catalog-nav__link catalog-nav__link--lvl-2">Паштеты в оболочке и ливерные колбасы</a>
+                      </li>
+                      <li class="catalog-nav__item catalog-nav__item--lvl-2">
+                        <a href="#" class="catalog-nav__link catalog-nav__link--lvl-2">Ветчины</a>
+                      </li>
+                      <li class="catalog-nav__item catalog-nav__item--lvl-2">
+                        <a href="#" class="catalog-nav__link catalog-nav__link--lvl-2">Сардельки</a>
+                      </li>
+                      <li class="catalog-nav__item catalog-nav__item--lvl-2">
+                        <a href="#" class="catalog-nav__link catalog-nav__link--lvl-2">Колбасы вареные</a>
+                      </li>
+                      <li class="catalog-nav__item catalog-nav__item--lvl-2">
+                        <a href="#" class="catalog-nav__link catalog-nav__link--lvl-2">Колбасы сырокопченые</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="#" class="catalog-nav__link">Консервы</a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="#" class="catalog-nav__link">Деликатесы мясные</a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="#" class="catalog-nav__link">Полуфабрикаты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- end catalog sidebar -->
+
+          <!-- catalog bidy -->
+          <div class="catalog__body">
+            <div class="catalog__card-row">
+              <a href="#" class="card card--product">
+                <div class="card__photo">
+                  <img src="img/demo-catalog-pict-01.jpg" alt="Card image">
+                </div>
+                <div class="card__name">
+                  <h4>Шпикачки пикник (в газе)</h4>
+                </div>
+              </a>
+              <a href="#" class="card card--product">
+                <div class="card__photo">
+                  <img src="img/demo-catalog-pict-02.jpg" alt="Card image">
+                </div>
+                <div class="card__name">
+                  <h4>Сардельки «Докторские» (в газе)</h4>
+                </div>
+              </a>
+              <a href="#" class="card card--product">
+                <div class="card__photo">
+                  <img src="img/demo-catalog-pict-02.jpg" alt="Card image">
+                </div>
+                <div class="card__name">
+                  <h4>Сардельки «Докторские» (в газе)</h4>
+                </div>
+              </a>
+              <a href="#" class="card card--product">
+                <div class="card__photo">
+                  <img src="http://iwama-ryuclub.ru/uploads/taginator/Sep-2014/blyudo-iz-yablok.jpg" alt="Card image">
+                </div>
+                <div class="card__name">
+                  <h4>Сардельки «Докторские» (в газе)</h4>
+                </div>
+              </a>
+              <a href="#" class="card card--product">
+                <div class="card__photo">
+                  <img src="img/demo-catalog-pict-04.jpg" alt="Card image">
+                </div>
+                <div class="card__name">
+                  <h4>Сардельки «Докторские» (в газе)</h4>
+                </div>
+              </a>
+              <a href="#" class="card card--product">
+                <div class="card__photo">
+                  <img src="img/demo-catalog-pict-05.jpg" alt="Card image">
+                </div>
+                <div class="card__name">
+                  <h4>Сардельки «Докторские» (в газе)</h4>
+                </div>
+              </a>
+              <a href="#" class="card card--product">
+                <div class="card__photo">
+                  <img src="img/demo-catalog-pict-06.jpg" alt="Card image">
+                </div>
+                <div class="card__name">
+                  <h4>Сардельки «Докторские» (в газе)</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- end catalog body -->
+        </div>
+        <!-- end catalog -->
 
       </main>
 

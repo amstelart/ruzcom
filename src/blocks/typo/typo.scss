@@ -51,6 +51,14 @@ body {
   color: $text-color;
 }
 
+a {
+  color: #6c1200;
+  &:hover,
+  &:focus {
+    color: lighten(#6c1200, 15%);
+  }
+}
+
 // .h1,
 // .h2,
 // .h3,

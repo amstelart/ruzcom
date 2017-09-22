@@ -106,7 +106,8 @@ $transition-time:             0.3s !default;
   &__lvl {
 
     &--2 {
-
+      
+      background: #ff0027;
       @media (min-width: $menu-desktop-width) {
         position: absolute;
         top: 100%;

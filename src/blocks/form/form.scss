@@ -2,11 +2,6 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, $media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-$font-family--headings:       -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif !default;
-
-$font-size--h3:               1.5em !default;
-
-$line-height:                 1.375em !default;
 
 .form {
 
@@ -16,27 +11,60 @@ $line-height:                 1.375em !default;
   &:not(:last-child) {
     margin-bottom: $line-height;
   }
-
-  fieldset {
-    min-width: 0;
-    padding: 0;
+  border: 2px solid #ac1717;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 20px 40px;
+  &__header {
+  }
+  &__header-flex {
+    padding: 40px 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__header-title {
     margin: 0;
-    border: 0;
+  }
+  &__header-text {
+    font-size: 20px;
+  }
+  .region {
+    margin-left: auto;
+    font-size: 20px;
+  }
+  &__header-text {
+    flex-basis: 100%;
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  &__footer {
+    text-align: center;
+  }
+  &__field {
+    width: 31%;
+  }
 
-    &:not(:last-child) {
-      margin-bottom: $line-height;
+  &__accept-partners {
+    color: #fff;
+    border: none;
+    max-width: 800px;
+    margin: auto;
+    a {
+      color: #fff;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+    .region {
+      margin-bottom: 25px;
+    }
+    .form__field {
+      width: 48%;
     }
   }
 
-  legend {
-    display: block;
-    width: 100%;
-    font-size: $font-size--h3;
-    font-family: $font-family--headings;
-    font-weight: 700;
-    line-height: $line-height;
-    color: currentColor;
-    margin-top: $line-height;
-    margin-bottom: ($line-height / 2);
-  }
 }

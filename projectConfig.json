@@ -72,7 +72,16 @@
     "page-content": [],
     "vacancy": [],
     "contacts": [],
-    "quality-control": []
+    "quality-control": [],
+    "partners": [],
+    "main-footer": [],
+    "catalog": [],
+    "license": [],
+    "catalog-nav": [],
+    "advantages": [],
+    "accept-partners": [],
+    "coverage-map": [],
+    "reviews": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

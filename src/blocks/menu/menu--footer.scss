@@ -21,6 +21,7 @@
     }
     #{$block-name}__link {
       color: #fff;
+      line-height: 1.2;
       &:hover,
       &:focus {
         color: darken(#fff, 25%);
