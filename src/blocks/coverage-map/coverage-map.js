@@ -2,9 +2,7 @@ ymaps.ready(function () {
     var myMap = new ymaps.Map('coverage-map', {
             center: [54.714737, 42.661363],
             zoom: 6
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
+        });
 
         myPlacemarkMoscow = new ymaps.Placemark([55.755773, 37.617761], {
             hintContent: 'Собственный значок метки',
