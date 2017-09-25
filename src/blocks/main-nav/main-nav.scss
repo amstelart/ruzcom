@@ -67,7 +67,8 @@ $main-menu-mobile-width:      334px !default;
 
     @media (min-width: $screen-xl) {
       display: flex;
-      padding-left: 18px;
+      justify-content: space-between;
+      padding-left: 220px;
     }
 
     // Блок, показываемый справа, начиная с 970
@@ -225,7 +226,7 @@ $main-menu-mobile-width:      334px !default;
     }
 
     @media (min-width: $screen-xl) {
-      padding: 18px 18px 18px 30px;
+      padding: 9px 18px 9px 30px;
       font-weight: 400;
       text-transform: uppercase;
       font-size: 14px;

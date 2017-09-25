@@ -9,8 +9,10 @@
   position: relative;
   z-index: 12;
   white-space: nowrap;
-  min-width: $header-height;
-  height: $header-height;
+  min-width: 162px;
+  height: 62px;
+  // min-width: $header-height;
+  // height: $header-height;
 
   img {
     display: block;
