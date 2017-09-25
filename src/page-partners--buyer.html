@@ -14,12 +14,10 @@
 
     <div class="page__body">
 
-      <header class="page-header" role="banner">
-        <div class="main-nav-wrap">
-          @@include('blocks/main-nav/main-nav.html')
-        </div>
+      @@include('blocks/page-header/page-header.html')
+      <div class="page-header--bottom">
         @@include('blocks/second-nav/second-nav.html')
-      </header>
+      </div>
 
       <main class="page-content page-content--res" role="main">
 
@@ -98,7 +96,8 @@
         <div class="coverage-map">
           <h2 class="coverage-map__title">Карта охвата</h2>
           <div class="coverage-map__wrap">
-            <img src="img/coverage-map.jpg" alt="">
+            <div id="coverage-map" style="height: 600px;"></div>
+            <!-- <img src="img/coverage-map.jpg" alt=""> -->
           </div>
         </div>
 

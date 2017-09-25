@@ -14,12 +14,10 @@
 
     <div class="page__body">
 
-      <header class="page-header" role="banner">
-        <div class="main-nav-wrap">
-          @@include('blocks/main-nav/main-nav.html')
-        </div>
+      @@include('blocks/page-header/page-header.html')
+      <div class="page-header--bottom">
         @@include('blocks/second-nav/second-nav.html')
-      </header>
+      </div>
 
       <main class="page-content" role="main">
 
@@ -51,13 +49,13 @@
             <div class="contacts__col contacts__col--map">
               <div class="contacts__map-card">
                 <h3 class="contacts__map-title">Схема проезда к заводу (проходная)</h3>
-                <div class="contacts__map"></div>
+                <div class="contacts__map" id="contacts__map_01"></div>
               </div>
             </div>
             <div class="contacts__col contacts__col--map">
               <div class="contacts__map-card">
                 <h3 class="contacts__map-title">Проезд на загрузку</h3>
-                <div class="contacts__map"></div>
+                <div class="contacts__map" id="contacts__map_02"></div>
               </div>
             </div>
           </div>
