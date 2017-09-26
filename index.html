@@ -53,7 +53,8 @@
         <div class="page-header__inner">
 
           <a href="index.html" class="logo">
-            <img src="img/logo.svg" width="37" height="37" alt="Greece.ru logo">
+            <img class="desctop" width="162" height="62" src="img/logo.png" alt="Рузком">
+            <img class="mobile" width="128" height="24" src="img/logo-mobile.png" alt="Рузком">
           </a>
 
           <div id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></div>
@@ -62,10 +63,38 @@
 
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a href="search.html" class="main-nav__link">Главная</a>
+                <a href="index.html" class="main-nav__link">Главная</a>
               </li>
-              <li class="main-nav__item">
-                <a href="search.html" class="main-nav__link">Каталог</a>
+              <li class="main-nav__item main-nav__item--catalog">
+                <span class="main-nav__pseudolink  main-nav__pseudolink--arrow" data-main-nav-submenu-toggler>Каталог</span>
+                <div class="main-nav__lvl  main-nav__lvl--catalog">
+                  <div class="main-nav__breadcrumbs" style="display:none;">
+                    <span class="main-nav__breadcrumbs-item  main-nav__breadcrumbs-item--back" data-main-nav-submenu-hide>Назад</span>
+                    <span class="main-nav__breadcrumbs-item">&nbsp;&nbsp;>&nbsp; Каталог</span>
+                  </div>
+                  <ul class="main-nav__sub-list">
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="page-partners--provider.html" class="main-nav__sub-link">
+                        Колбасная продукция
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="page-partners--buyer.html" class="main-nav__sub-link">
+                        Консервы
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="page-partners--buyer.html" class="main-nav__sub-link">
+                        Деликатесы мясные
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="page-partners--buyer.html" class="main-nav__sub-link">
+                        Полуфабрикаты
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="main-nav__item">
                 <a href="page-quality-control.html" class="main-nav__link">Контроль качества</a>
@@ -415,20 +444,22 @@
 
       <div class="main-video">
         <div class="main-video__wrap">
-          <div class="card">
-            <div class="card__video embed-responsive  embed-responsive--16-9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/GFNnPMlIzoQ?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <div class="main-video__card-wrap">
+            <div class="card">
+              <div class="card__video embed-responsive  embed-responsive--16-9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GFNnPMlIzoQ?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="card__name">
+                <h4 class="card__title">Наще производство</h4>
+              </div>
             </div>
-            <div class="card__name">
-              <h4 class="card__title">Наще производство</h4>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__video embed-responsive  embed-responsive--16-9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/GFNnPMlIzoQ?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="card__name">
-              <h4 class="card__title">Старорузская серия</h4>
+            <div class="card">
+              <div class="card__video embed-responsive  embed-responsive--16-9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GFNnPMlIzoQ?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="card__name">
+                <h4 class="card__title">Старорузская серия</h4>
+              </div>
             </div>
           </div>
         </div>
