@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Рузком</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__body">
+
+      @@include('blocks/page-header/page-header.html')
+      <div class="page-header--bottom">
+        @@include('blocks/second-nav/second-nav.html')
+      </div>
+
+      <main class="page-content" role="main">
+
+        <h1 class="page-content__title"><span>Рецепты</span></h1>
+
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Назад к рецептам</a></li>
+        </ul>
+        <div class="recipe">
+          <div class="recipe__col-wrap">
+            <div class="recipe__col-main">
+              <h2 class="recipe__title">Салат с колбасой</h2>
+              <div class="recipe__photo">
+                <img src="img/demo-main-recipe-pict.jpg" alt="">
+              </div>
+              <div class="recipe__info">
+                <div class="recipe__info-part">
+                  <h5 class="recipe__info-title">Ингридиенты:</h5>
+                  <p>Багет — 1 шт.</p>
+                  <p>Сливочное масло — 25 г</p>
+                  <p>Ветчина "Рузком" — 2 ломтика</p>
+                  <p>Сыр — 1 ломтик</p>
+                  <p>Помидор — 1/2 шт.</p>
+                  <p>Листья салата — 2 шт.</p>
+                </div>
+                <div class="recipe__info-part recipe__info-part--num-list">
+                  <h5 class="recipe__info-title">Способ приготовления:</h5>
+                  <p>Половинку багета смазать сливочным маслом.</p>
+                  <p>Выложить на нее листья салата, ломтики ветчины и сыра.</p>
+                  <p>Выложить сверху порезанный кружочками помидор. </p>
+                  <p>Накрыть другой половинкой багета.</p>
+                  <p>Багет готов!</p>
+                </div>
+              </div>
+              <div class="recipe__about">
+                <h4 class="recipe__about-title">О рецепте</h4>
+                <p>Макароны с сардельками — это одно из самых простых, но в тоже время вкусных и сытных блюд, которое вы сможете приготовить всего за полчаса. Отличный ужин или завтрак для всей семьи.Макароны с сардельками — это одно из самых простых, но в тоже время вкусных и сытных блюд, которое вы сможете приготовить всего за полчаса. Отличный ужин или завтрак для всей семьи.</p>
+              </div>
+
+            </div>
+            <div class="recipe__col-cards">
+              <h2 class="recipe__col-cards-title">Другие рецепты</h2>
+              <div class="recipe__card-wrap">
+                <div class="card card--recipe">
+                  <div class="card__body">
+                    <div class="card__photo">
+                      <img src="img/demo-recipe-pict-02.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card__name">
+                      <h4 class="card__title">Колбасы варено-копченые и полукопченые</h4>
+                    </div>
+                    <div class="card__caption">
+                      <p>Несложные рецепты салатов с кукурузой и колбасой часто выручают работающую хозяйку. Да и для холостяка, не слишком увлекающегося кулинарией,
+                        не составит проблемы приготовить такой салат.</p>
+                      <a class="card__view-all" href="page-recipe--item">посмотреть полностью</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card--recipe">
+                  <div class="card__body">
+                    <div class="card__photo">
+                      <img src="img/demo-recipe-pict-01.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card__name">
+                      <h4 class="card__title">Колбасы варено-копченые и полукопченые</h4>
+                    </div>
+                    <div class="card__caption">
+                      <p>Несложные рецепты салатов с кукурузой и колбасой часто выручают работающую хозяйку. Да и для холостяка, не слишком увлекающегося кулинарией,
+                        не составит проблемы приготовить такой салат.</p>
+                        <a class="card__view-all" href="page-recipe--item">посмотреть полностью</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

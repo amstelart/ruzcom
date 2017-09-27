@@ -54,14 +54,21 @@
 }
 
 .product-card__wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  @include row;
   .card {
     padding: 20px;
-    flex-basis: 24%;
     border: 2px solid transparent;
     border-radius: 20px;
+    @include make-col(12);
+    @media (min-width: $screen-sm) {
+      @include make-col(6);
+    }
+    @media (min-width: $screen-lg) {
+      @include make-col(4);
+    }
+    @media (min-width: $screen-xl) {
+      @include make-col(3);
+    }
     &:hover {
       border: 2px dashed #6b1200;
       cursor: pointer;

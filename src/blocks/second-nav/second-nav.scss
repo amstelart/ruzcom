@@ -16,6 +16,10 @@
     flex-grow: 1;
     display: flex;
     align-items: center;
+    &:hover,
+    &:focus {
+      color: lighten(#f9f288, 15%);
+    }
     &--sausage {
       #{$block-name}__text {
         @include sprite($flag-sausage);

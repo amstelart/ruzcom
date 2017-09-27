@@ -1,0 +1,65 @@
+// В этом файле должны быть стили для БЭМ-блока recipe-carousel, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.recipe-carousel {
+  position: relative;
+  padding: 0 50px;
+
+  .card {
+    margin:10px;
+  }
+
+  $block-name:                &; // #{$block-name}__element {}
+
+  .owl-dots {
+    display: none;
+  }
+
+  .owl-prev,
+  .owl-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    color: transparent;
+    overflow: hidden;
+    transition: opacity $transition-time;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 32px;
+      border-right: 3px solid #2c2c2c;
+      border-bottom: 3px solid #2c2c2c;
+    }
+  }
+
+  .owl-prev {
+    left: -45px;
+
+    &:before {
+      transform: translateX(5px) rotate(135deg);
+    }
+  }
+
+  .owl-next {
+    right: -45px;
+
+    &:before {
+      transform: translateX(-5px) rotate(-45deg);
+    }
+  }
+
+  .disabled {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+}

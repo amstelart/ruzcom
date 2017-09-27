@@ -1,0 +1,113 @@
+// В этом файле должны быть стили для БЭМ-блока recipe, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.recipe {
+
+  $block-name:                &; // #{$block-name}__element {}
+
+  &__title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  &__photo {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__info {
+    margin-bottom: 10px;
+  }
+  &__info-part {
+    overflow: hidden;
+    &--num-list {
+      counter-reset: number;
+      p:before {
+        margin-right: 5px;
+        counter-increment: number;
+        content: counter(number)")";
+      }
+    }
+  }
+  &__info-title {
+    color: #ee1c25;
+  }
+
+  &__about {
+    border-top: 1px solid #e5e5e5;
+  }
+  &__about-title {
+    font-weight: 400;
+  }
+
+  &__card-wrap {
+    @include row;
+  }
+  .card {
+    margin-bottom: 30px;
+    &__title {
+      font-size: 18px;
+      margin-top: .4em;
+      margin-bottom: .4em;
+    }
+    &__caption {
+      font-size: 14px;
+      p {
+        margin-top: .4em;
+        margin-bottom: .4em;        
+      }
+    }
+    @include make-col(12);
+    @media (min-width: $screen-md) {
+      @include make-col(6);
+    }
+    @media (min-width: $screen-xl) {
+      @include make-col(4);
+    }
+  }
+
+  &__col-wrap {
+    @include row;
+  }
+  &__col-main {
+    @include make-col(12);
+    @media (min-width: $screen-lg) {
+      @include make-col(8);
+    }
+  }
+  &__col-cards {
+    // background: #f5f5f5;
+    @media (min-width: $screen-lg) {
+      @include make-col(4);
+    }
+    .card {
+      @include make-col(12);
+      @media (min-width: $screen-md) {
+        @include make-col(6);
+      }
+      @media (min-width: $screen-lg) {
+        @include make-col(12);
+      }
+      @media (min-width: $screen-xl) {
+        @include make-col(12);
+      }
+    }
+  }
+  &__col-cards-title {
+    font-size: 24px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    @include make-col(12);
+    margin-top: 0;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+
+
+}

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>NTH start project</title>
+  <title>Рузком</title>
   <meta name="description" content="">
   @@include('_include/page_head.html')
 </head>
@@ -12,7 +12,7 @@
 
   <div class="page__inner">
 
-    <div class="page__content">
+    <div class="page__body">
 
       @@include('blocks/page-header/page-header.html')
       <div class="page-header--bottom">
@@ -21,7 +21,172 @@
 
       <main class="page-content" role="main">
 
-        <h1 class="page-content__title"><span>Каталог</span></h1>
+        <h1 class="page-content__title"><span>Колбасная продукция</span></h1>
+
+        <!-- catalog -->
+        <div class="catalog">
+          <!-- catalog sidebar -->
+          <div class="catalog__sidebar">
+            <nav class="catalog-nav" role="navigation">
+              <ul class="catalog-nav__list">
+                <li class="catalog-nav__item catalog-nav__item--active">
+                  <a href="#" class="catalog-nav__link">Колбасная продукция</a>
+                  <div class="catalog-nav__lvl catalog-nav__lvl--2">
+                    <ul class="catalog-nav__list catalog-nav__list--lvl-2">
+                      <li class="catalog-nav__item catalog-nav__item--lvl-2">
+                        <a href="#" class="catalog-nav__link catalog-nav__link--lvl-2">Колбасы варено-копченые и полукопчеые</a>
+                      </li>
+                      <li class="catalog-nav__item catalog-nav__item--lvl-2">
+                        <a href="#" class="catalog-nav__link catalog-nav__link--lvl-2">Паштеты в оболочке и ливерные колбасы</a>
+                      </li>
+                      <li class="catalog-nav__item catalog-nav__item--lvl-2">
+                        <a href="#" class="catalog-nav__link catalog-nav__link--lvl-2">Ветчины</a>
+                      </li>
+                      <li class="catalog-nav__item catalog-nav__item--lvl-2">
+                        <a href="#" class="catalog-nav__link catalog-nav__link--lvl-2">Сардельки</a>
+                      </li>
+                      <li class="catalog-nav__item catalog-nav__item--lvl-2">
+                        <a href="#" class="catalog-nav__link catalog-nav__link--lvl-2">Колбасы вареные</a>
+                      </li>
+                      <li class="catalog-nav__item catalog-nav__item--lvl-2">
+                        <a href="#" class="catalog-nav__link catalog-nav__link--lvl-2">Колбасы сырокопченые</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="#" class="catalog-nav__link">Консервы</a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="#" class="catalog-nav__link">Деликатесы мясные</a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="#" class="catalog-nav__link">Полуфабрикаты</a>
+                </li>
+              </ul>
+            </nav>
+            <a class="catalog__download-link" href="#">Скачать каталог</a>
+          </div>
+          <!-- end catalog sidebar -->
+
+          <!-- catalog bidy -->
+          <div class="catalog__body">
+            <div class="catalog__product">
+              <div class="catalog__product-image">
+                <img src="img/product-pic.jpg" alt="">
+              </div>
+              <div class="catalog__product-detail">
+                <h3 class="catalog__product-detail-title">Шпикачки Пикник (в газе)</h3>
+                <p><strong>Торговая марка:</strong> Рузком</p>
+                <p><strong>Минимальная упаковка:</strong> 9 кг</p>
+                <p><strong>Тип оболочки:</strong> н/о</p>
+                <p><strong>Условия производства:</strong> ТУ</p>
+                <p><strong>Срок реализации:</strong> 20 дней</p>
+                <p><strong>Температура хранения:</strong> 0+6</p>
+                <p><strong>Штрихкод:</strong> 8384503038</p>
+              </div>
+              <div class="catalog__product-caption">
+                <p>Продукт готовися из баранины высокого качества, а также лука, соли, черного молотого перца, и лаврового
+                листа. Вы можете добавить тущеную баранину в супы, а также во вторые блюда. Приятного вам аппетита!</p>
+              </div>
+            </div>
+            <div class="catalog__card-row">
+              <h3>Похожая продукция</h3>
+              <a href="#" class="card card--product">
+                <div class="card__photo">
+                  <img src="img/demo-catalog-pict-01.jpg" alt="Card image">
+                </div>
+                <div class="card__name">
+                  <h4>Шпикачки пикник (в газе)</h4>
+                </div>
+              </a>
+              <a href="#" class="card card--product">
+                <div class="card__photo">
+                  <img src="img/demo-catalog-pict-02.jpg" alt="Card image">
+                </div>
+                <div class="card__name">
+                  <h4>Сардельки «Докторские» (в газе)</h4>
+                </div>
+              </a>
+              <a href="#" class="card card--product">
+                <div class="card__photo">
+                  <img src="img/demo-catalog-pict-02.jpg" alt="Card image">
+                </div>
+                <div class="card__name">
+                  <h4>Сардельки «Докторские» (в газе)</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- end catalog body -->
+        </div>
+        <!-- end catalog -->
+
+
+        <div class="recipe-carousel">
+          <div class="owl-carousel" id="recipe-carousel">
+            <div class="card card--recipe">
+                <div class="card__body">
+                  <div class="card__photo">
+                    <img src="img/demo-recipe-pict-01.jpg" alt="Card image cap">
+                  </div>
+                  <div class="card__name">
+                    <h4 class="card__title">Колбасы варено-копченые и полукопченые</h4>
+                  </div>
+                  <div class="card__caption">
+                    <p>Несложные рецепты салатов с кукурузой и колбасой часто выручают работающую хозяйку. Да и для холостяка, не слишком увлекающегося кулинарией,
+                      не составит проблемы приготовить такой салат.</p>
+                      <a class="card__view-all" href="page-recipe--item.html">посмотреть полностью</a>
+                    </div>
+                  </div>
+                </div>
+            <div class="card card--recipe">
+              <div class="card__body">
+                <div class="card__photo">
+                  <img src="img/demo-recipe-pict-01.jpg" alt="Card image cap">
+                </div>
+                <div class="card__name">
+                  <h4 class="card__title">Колбасы варено-копченые и полукопченые</h4>
+                </div>
+                <div class="card__caption">
+                <p>Несложные рецепты салатов с кукурузой и колбасой часто выручают работающую хозяйку. Да и для холостяка, не слишком увлекающегося кулинарией,
+                  не составит проблемы приготовить такой салат.</p>
+                  <a class="card__view-all" href="page-recipe--item.html">посмотреть полностью</a>
+                </div>
+              </div>
+            </div>
+            <div class="card card--recipe">
+                <div class="card__body">
+                  <div class="card__photo">
+                    <img src="img/demo-recipe-pict-01.jpg" alt="Card image cap">
+                  </div>
+                  <div class="card__name">
+                    <h4 class="card__title">Колбасы варено-копченые и полукопченые</h4>
+                  </div>
+                  <div class="card__caption">
+                    <p>Несложные рецепты салатов с кукурузой и колбасой часто выручают работающую хозяйку. Да и для холостяка, не слишком увлекающегося кулинарией,
+                      не составит проблемы приготовить такой салат.</p>
+                      <a class="card__view-all" href="page-recipe--item.html">посмотреть полностью</a>
+                    </div>
+                  </div>
+                </div>
+            <div class="card card--recipe">
+              <div class="card__body">
+                <div class="card__photo">
+                  <img src="img/demo-recipe-pict-01.jpg" alt="Card image cap">
+                </div>
+                <div class="card__name">
+                  <h4 class="card__title">Колбасы варено-копченые и полукопченые</h4>
+                </div>
+                <div class="card__caption">
+                <p>Несложные рецепты салатов с кукурузой и колбасой часто выручают работающую хозяйку. Да и для холостяка, не слишком увлекающегося кулинарией,
+                  не составит проблемы приготовить такой салат.</p>
+                  <a class="card__view-all" href="page-recipe--item.html">посмотреть полностью</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
 
       </main>
 

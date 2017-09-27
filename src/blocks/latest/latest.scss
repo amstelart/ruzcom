@@ -75,12 +75,16 @@
 }
 
 .latest-card__wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  @include row;
   .card {
+    @include make-col(12);
+    @media (min-width: $screen-sm) {
+      @include make-col(6);
+    }
+    @media (min-width: $screen-xl) {
+      @include make-col(4);
+    }
     padding: 20px;
-    flex-basis: 32%;
     border: 2px solid transparent;
     border-radius: 20px;
     &:hover {

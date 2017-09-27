@@ -6,12 +6,21 @@
 
   $block-name:                &; // #{$block-name}__element {}
   padding: 30px 0;
+  @media (min-width: $screen-lg) {
+    padding: 15px 0;
+  }
 
   @include row;
 
   &__card {
-    @include make-col(3);
     text-align: center;
+    margin-bottom: 20px;
+    @media (min-width: $screen-md) {
+      @include make-col(6);
+    }
+    @media (min-width: $screen-xl) {
+      @include make-col(3);
+    }
   }
   &__icon {
     background-color: #383838;
@@ -50,8 +59,11 @@
     }
   }
   &__text {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.3;
+    @media (min-width: $screen-xl) {
+      font-size: 24px;
+    }
   }
 
 }

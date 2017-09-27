@@ -5,6 +5,7 @@
 .catalog-nav {
   $block-name:                &;
   // #{$block-name}__element
+  margin-bottom: 40px;
 
   &__list {
     list-style: none;
@@ -21,7 +22,8 @@
   &__link {
     display: block;
     font-size: 24px;
-    padding: 0.4em 0.3em;
+    // padding: 0.4em 0.3em;
+    padding: 0.4em 0em;
     color: #2c2c2c;
     font-weight: 700;
     text-decoration: none;

@@ -81,7 +81,9 @@
     "advantages": [],
     "accept-partners": [],
     "coverage-map": [],
-    "reviews": []
+    "reviews": [],
+    "recipe": [],
+    "recipe-carousel": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

@@ -7,6 +7,7 @@
   $block-name:                &; // #{$block-name}__element {}
   &__wrap {
     @include container;
+    position: relative;
   }
   &__item {
     display: flex;
@@ -71,6 +72,40 @@
       font-size: 24px;
       line-height: 36px;
       margin-top: 0;
+    }
+  }
+
+  &__controls {
+
+  }
+  &__controls-prev {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 79px;
+    @include sprite($left-arrow);
+    &:hover,
+    &:focus {
+      @include sprite($left-arrow-hover);
+    }
+  }
+  &__controls-next {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: -46px;
+    transform: translateY(-50%);
+    width: 46px;
+    height: 69px;
+    @include sprite($right-arrow);
+    &:hover,
+    &:focus {
+      @include sprite($right-arrow-hover);
     }
   }
 

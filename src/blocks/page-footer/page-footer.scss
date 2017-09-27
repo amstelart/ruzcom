@@ -10,24 +10,42 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  font-size: 18px;
-  padding-top: 50px;
-  padding-bottom: 15px;
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @media (min-width: $screen-lg) {
+    font-size: 18px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+  }
   &__container {
     @include container;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     // justify-content: space-between;
+    @media (min-width: $screen-lg) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
   }
   &__part {
-    flex-grow: 1;
-    &--contacts {
-      text-align: right;
+    text-align: center;
+    @media (min-width: $screen-lg) {
+      flex-grow: 1;
+      &--contacts {
+        text-align: right;
+      }
     }
   }
   .logo {
     width: 162px;
     height: 62px;
     display: block;
+    margin-bottom: 10px;
+    @media (min-width: $screen-lg) {
+      margin-bottom: 0;
+    }
   }
   &__info {
     text-align: center;
@@ -35,8 +53,13 @@
     font-size: 14px;
   }
   .menu--footer {
-    column-count: 2;
-    column-gap: 0;
+    display: none;
+    text-align: left;
+    @media (min-width: $screen-xl) {
+      display: block;
+      column-count: 2;
+      column-gap: 0;
+    }
   }
   &__dev {
     color: #bebebe;

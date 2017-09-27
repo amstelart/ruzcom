@@ -12,49 +12,59 @@
   padding: 0;
   justify-content: space-between;
   margin-bottom: 25px;
+  flex-direction: column;
+  @media (min-width: $screen-lg) {
+    flex-direction: row;
+  }
   &__item {
     flex: 1;
     white-space: nowrap;
+    margin-bottom: 10px;
+    @media (min-width: $screen-lg) {
+      margin-bottom: 0;
+    }
     &--active {
       #{$block-name}__link {
         background-color: #5d1900;
         color: #fff;
       }
     }
-    &:not(:last-child) {
-      padding-right: 30px;
-      position: relative;
-      &:after {
-        content: '';
-        @include sprite($nav-arrow);
-        position: absolute;
-        right: 0;
-        top:9px;
-        display: inline-block;
+    @media (min-width: $screen-lg) {
+      &:not(:last-child) {
+        padding-right: 30px;
+        position: relative;
+        &:after {
+          content: '';
+          @include sprite($nav-arrow);
+          position: absolute;
+          right: 0;
+          top:9px;
+          display: inline-block;
+        }
       }
-    }
-    &:first-child {
-      position: relative;
-      padding-left: 29px;
-      &:before {
-        content: '';
-        @include sprite($nav-arrow-left);
-        position: absolute;
-        left: 0;
-        top:9px;
-        display: inline-block;
+      &:first-child {
+        position: relative;
+        padding-left: 29px;
+        &:before {
+          content: '';
+          @include sprite($nav-arrow-left);
+          position: absolute;
+          left: 0;
+          top:9px;
+          display: inline-block;
+        }
       }
-    }
-    &:last-child {
-      position: relative;
-      padding-right: 29px;
-      &:after {
-        content: '';
-        @include sprite($nav-arrow-right);
-        position: absolute;
-        right: 0;
-        top:9px;
-        display: inline-block;
+      &:last-child {
+        position: relative;
+        padding-right: 29px;
+        &:after {
+          content: '';
+          @include sprite($nav-arrow-right);
+          position: absolute;
+          right: 0;
+          top:9px;
+          display: inline-block;
+        }
       }
     }
   }

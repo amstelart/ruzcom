@@ -35,12 +35,18 @@
 
   &__wrap {
     @include container;
-    display: flex;
-    justify-content: space-between;
+  }
+  &__card-wrap {
+    @include row;
   }
   .card {
+    @include make-col(12);
     color: #fff;
-    flex-basis: 49%;
+    margin-bottom: 20px;
+    @media (min-width: $screen-md) {
+      @include make-col(6);
+      margin-bottom: 0;
+    }
     &__name {
       text-align: center;
     }
