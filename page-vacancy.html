@@ -66,11 +66,11 @@
                 <a href="index.html" class="main-nav__link">Главная</a>
               </li>
               <li class="main-nav__item main-nav__item--catalog">
-                <span class="main-nav__pseudolink  main-nav__pseudolink--arrow" data-main-nav-submenu-toggler>Каталог</span>
+                <span class="main-nav__pseudolink  main-nav__pseudolink--arrow" data-main-nav-submenu-toggler="">Каталог</span>
                 <div class="main-nav__lvl  main-nav__lvl--catalog">
                   <div class="main-nav__breadcrumbs" style="display:none;">
-                    <span class="main-nav__breadcrumbs-item  main-nav__breadcrumbs-item--back" data-main-nav-submenu-hide>Назад</span>
-                    <span class="main-nav__breadcrumbs-item">&nbsp;&nbsp;>&nbsp; Каталог</span>
+                    <span class="main-nav__breadcrumbs-item  main-nav__breadcrumbs-item--back" data-main-nav-submenu-hide="">Назад</span>
+                    <span class="main-nav__breadcrumbs-item">&nbsp;&nbsp;&gt;&nbsp; Каталог</span>
                   </div>
                   <ul class="main-nav__sub-list">
                     <li class="main-nav__item  main-nav__item--lvl-2">
@@ -95,6 +95,9 @@
                     </li>
                   </ul>
                 </div>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-recipe.html" class="main-nav__link">Рецепты</a>
               </li>
               <li class="main-nav__item">
                 <a href="page-quality-control.html" class="main-nav__link">Контроль качества</a>
@@ -263,7 +266,7 @@
               на мясоперерабатывающих предприятиях желателен.</p>
               <p><strong>Заработная плата:</strong> Договорная</p>
             </div>
-            <a href="#" class="btn">Откликнуться</a>
+            <a href="#modal-vacancy" data-toggle="modal" class="btn">Откликнуться</a>
           </div>
           <div class="vacancy__card">
             <h2 class="vacancy__title">Слесарь-ремонтник</h2>
@@ -275,7 +278,7 @@
               на мясоперерабатывающих предприятиях желателен.</p>
               <p><strong>Заработная плата:</strong> Договорная</p>
             </div>
-            <a href="#" class="btn">Откликнуться</a>
+            <a href="#modal-vacancy" data-toggle="modal" class="btn">Откликнуться</a>
           </div>
           <div class="vacancy__card">
             <h2 class="vacancy__title">Слесарь-ремонтник</h2>
@@ -287,7 +290,7 @@
               на мясоперерабатывающих предприятиях желателен.</p>
               <p><strong>Заработная плата:</strong> Договорная</p>
             </div>
-            <a href="#" class="btn">Откликнуться</a>
+            <a href="#modal-vacancy" data-toggle="modal" class="btn">Откликнуться</a>
           </div>
           <div class="vacancy__card">
             <h2 class="vacancy__title">Слесарь-ремонтник</h2>
@@ -299,7 +302,7 @@
               на мясоперерабатывающих предприятиях желателен.</p>
               <p><strong>Заработная плата:</strong> Договорная</p>
             </div>
-            <a href="#" class="btn">Откликнуться</a>
+            <a href="#modal-vacancy" data-toggle="modal" class="btn">Откликнуться</a>
           </div>
         </div>
 
@@ -341,6 +344,63 @@
 
     </div>
 
+  </div>
+
+  <div id="modal-vacancy" class="modal" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header">
+          <span class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+          <!-- <h4 class="modal__title">Modal 01 title</h4> -->
+        </div>
+        <div class="modal__body">
+          <form action="https://httpbin.org/post" class="form form--vacancy" method="post">
+            <div class="form__header">
+                <h2 class="form__header-title">Вакансия: <span>Слесарь-ремонтник</span></h2>
+            </div>
+            <div class="form__body">
+              <label class="form__field field-text">
+                <!-- <span class="field-text__name">Текстовое поле</span> -->
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Имя">
+                  <span class="field-text__help-text">Укажите ваше имя</span>
+                </span>
+              </label>
+              <label class="form__field field-text">
+                <!-- <span class="field-text__name">Текстовое поле</span> -->
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="tel" placeholder="Телефон">
+                  <span class="field-text__help-text">Укажите контактный телефон</span>
+                </span>
+              </label>
+              <div class="form__field field-file">
+                <label class="field-file__input-wrap">
+                  <input class="field-file__input" type="file" data-multiple-caption="файлов выбрано: {count}" multiple>
+                  <span class="field-file__name-text" data-button-text="Выбрать файл(ы)">Ничего не выбрано</span>
+                  <span class="field-file__help-text">Прикрепите резюме</span>
+                </label>
+              </div>
+              <div class="form__field field-actions">
+                <button class="btn">Отправить заявку</button>
+              </div>
+            </div>
+            <div class="form__footer">
+              <div class="field-checkbox">
+                <div class="field-checkbox__input-wrap">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox" checked>
+                    <span class="field-checkbox__name-text">Я даю согласие на обработку персональных данных</span>
+                  </label>
+                  <div class="field-checkbox__help-text-wrap">
+                    <div class="field-checkbox__help-text"><a href="#">Политика конфиденциальности</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="js/script.min.js"></script>
 

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>NTH start project</title>
+  <title>Рузком</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -251,157 +251,117 @@
 
       </div>
 
-      <main class="page-content page-content--res" role="main">
+      <main class="page-content" role="main">
 
-        <h1 class="page-content__title"><span>Покупателям</span></h1>
+        <h1 class="page-content__title"><span>Рецепты</span></h1>
 
-        <div class="partners">
-          <div class="partners__text partners__text--lead">
-            <p>Преимущества производства под собственной торговой маркой</p>
-          </div>
-
-          <div class="advantages">
-            <div class="advantages__card">
-              <div class="advantages__icon advantages__icon--01"></div>
-              <p class="advantages__text">Повышение лояльности покупателей к сети</p>
-            </div>
-            <div class="advantages__card">
-              <div class="advantages__icon advantages__icon--02"></div>
-              <p class="advantages__text">Рост доходности</p>
-            </div>
-            <div class="advantages__card">
-              <div class="advantages__icon advantages__icon--03"></div>
-              <p class="advantages__text">Гарантированное качество</p>
-            </div>
-            <div class="advantages__card">
-              <div class="advantages__icon advantages__icon--04"></div>
-              <p class="advantages__text">Гарантированное наличие товара</p>
-            </div>
-          </div>
-      </main>
-
-      <section class="accept-partners">
-        <div class="accept-partners__inner">
-          <div class="accept-partners__header">
-            <h2 class="accept-partners__title">Станьте нашим партнером</h2>
-            <p class="accept-partners__sub-title">Оставьте свои контактные данные и наш менеджер свяжется с вами</p>
-          </div>
-          <form action="https://httpbin.org/post" class="form form__accept-partners" method="post">
-            <div class="form__header">
-                <div class="region">
-                  <span><a href="#">Выбрать регион</a></span>
+        <div class="recipe">
+          <div class="recipe__card-wrap">
+            <div class="card card--recipe">
+              <div class="card__body">
+                <div class="card__photo">
+                  <img src="img/demo-recipe-pict-01.jpg" alt="Card image cap">
                 </div>
-            </div>
-            <div class="form__body">
-              <label class="form__field field-text">
-                <!-- <span class="field-text__name">Текстовое поле</span> -->
-                <span class="field-text__input-wrap">
-                  <input class="field-text__input" type="tel" placeholder="Телефон">
-                  <!-- <span class="field-text__help-text">Обёртка — <code>label</code>. Можно сделать обёртку <code>div</code>, но тогда, возможно, захочется элемент <code>.field-text__name</code> делать <code>label</code> и связывать его с полем по <code>id</code> поля.</span> -->
-                </span>
-              </label>
-              <div class="form__field field-actions">
-                <button class="btn">Узнать подробнее</button>
-              </div>
-            </div>
-            <div class="form__footer">
-
-              <div class="field-checkbox">
-                <div class="field-checkbox__input-wrap">
-                  <label class="field-checkbox__name">
-                    <input class="field-checkbox__input" type="checkbox" checked>
-                    <span class="field-checkbox__name-text">Я даю согласие на обработку персональных данных</span>
-                  </label>
-                  <div class="field-checkbox__help-text-wrap">
-                    <div class="field-checkbox__help-text"><a href="#">Политика конфиденциальности</a></div>
+                <div class="card__name">
+                  <h4 class="card__title">Колбасы варено-копченые и полукопченые</h4>
+                </div>
+                <div class="card__caption">
+                  <p>Несложные рецепты салатов с кукурузой и колбасой часто выручают работающую хозяйку. Да и для холостяка, не слишком увлекающегося кулинарией,
+                    не составит проблемы приготовить такой салат.</p>
+                    <a class="card__view-all" href="page-recipe--item.html">посмотреть полностью</a>
                   </div>
+              </div>
+            </div>
+            <div class="card card--recipe">
+              <div class="card__body">
+                <div class="card__photo">
+                  <img src="img/demo-recipe-pict-02.jpg" alt="Card image cap">
                 </div>
-              </div>
-
-            </div>
-          </form>
-        </div>
-      </section>
-
-      <main class="page-content page-content--res" role="main">
-
-        <div class="coverage-map">
-          <h2 class="coverage-map__title">Карта охвата</h2>
-          <div class="coverage-map__wrap">
-            <div id="coverage-map" style="height: 600px;"></div>
-            <!-- <img src="img/coverage-map.jpg" alt=""> -->
-          </div>
-        </div>
-
-        <div class="reviews">
-          <h2 class="reviews__title">Отзывы</h2>
-          <div class="owl-carousel reviews__carousel" id="owl-carousel-reviews">
-            <div>
-              <img src="img/reviews-demo-01.jpg" alt="">
-            </div>
-            <div>
-              <img src="img/reviews-demo-01.jpg" alt="">
-            </div>
-            <div>
-              <img src="img/reviews-demo-01.jpg" alt="">
-            </div>
-            <div>
-              <img src="img/reviews-demo-01.jpg" alt="">
-            </div>
-            <div>
-              <img src="img/reviews-demo-01.jpg" alt="">
-            </div>
-            <div>
-              <img src="img/reviews-demo-01.jpg" alt="">
-            </div>
-          </div>
-        </div>
-
-        <form action="https://httpbin.org/post" class="form form__partners" method="post">
-            <div class="form__header">
-              <div class="form__header-flex">
-                <h2 class="form__header-title">Остались вопросы?</h2>
-                <div class="region">
-                  <span>Ваш регион: <a href="#">Московская область</a></span>
+                <div class="card__name">
+                  <h4 class="card__title">Колбасы варено-копченые и полукопченые</h4>
                 </div>
-              </div>
-              <p class="form__header-text">Для получения подробной информации звоните нам +7 (495) 552-33-03</p>
-            </div>
-            <div class="form__body">
-              <label class="form__field field-text">
-                <!-- <span class="field-text__name">Текстовое поле</span> -->
-                <span class="field-text__input-wrap">
-                  <input class="field-text__input" type="text" placeholder="Имя">
-                  <!-- <span class="field-text__help-text">Обёртка — <code>label</code>. Можно сделать обёртку <code>div</code>, но тогда, возможно, захочется элемент <code>.field-text__name</code> делать <code>label</code> и связывать его с полем по <code>id</code> поля.</span> -->
-                </span>
-              </label>
-              <label class="form__field field-text">
-                <!-- <span class="field-text__name">Текстовое поле</span> -->
-                <span class="field-text__input-wrap">
-                  <input class="field-text__input" type="tel" placeholder="Телефон">
-                  <!-- <span class="field-text__help-text">Обёртка — <code>label</code>. Можно сделать обёртку <code>div</code>, но тогда, возможно, захочется элемент <code>.field-text__name</code> делать <code>label</code> и связывать его с полем по <code>id</code> поля.</span> -->
-                </span>
-              </label>
-              <div class="form__field field-actions">
-                <button class="btn">Отправить заявку</button>
-              </div>
-            </div>
-            <div class="form__footer">
-
-              <div class="field-checkbox">
-                <div class="field-checkbox__input-wrap">
-                  <label class="field-checkbox__name">
-                    <input class="field-checkbox__input" type="checkbox" checked>
-                    <span class="field-checkbox__name-text">Я даю согласие на обработку персональных данных</span>
-                  </label>
-                  <div class="field-checkbox__help-text-wrap">
-                    <div class="field-checkbox__help-text"><a href="#">Политика конфиденциальности</a></div>
+                <div class="card__caption">
+                  <p>Несложные рецепты салатов с кукурузой и колбасой часто выручают работающую хозяйку. Да и для холостяка, не слишком увлекающегося кулинарией,
+                    не составит проблемы приготовить такой салат.</p>
+                    <a class="card__view-all" href="page-recipe--item.html">посмотреть полностью</a>
                   </div>
-                </div>
               </div>
-
             </div>
-          </form>
+            <div class="card card--recipe">
+              <div class="card__body">
+                <div class="card__photo">
+                  <img src="img/demo-recipe-pict-03.jpg" alt="Card image cap">
+                </div>
+                <div class="card__name">
+                  <h4 class="card__title">Колбасы варено-копченые и полукопченые</h4>
+                </div>
+                <div class="card__caption">
+                  <p>Несложные рецепты салатов с кукурузой и колбасой часто выручают работающую хозяйку. Да и для холостяка, не слишком увлекающегося кулинарией,
+                    не составит проблемы приготовить такой салат.</p>
+                    <a class="card__view-all" href="page-recipe--item.html">посмотреть полностью</a>
+                  </div>
+              </div>
+            </div>
+            <div class="card card--recipe">
+              <div class="card__body">
+                <div class="card__photo">
+                  <img src="img/demo-recipe-pict-03.jpg" alt="Card image cap">
+                </div>
+                <div class="card__name">
+                  <h4 class="card__title">Колбасы варено-копченые и полукопченые</h4>
+                </div>
+                <div class="card__caption">
+                  <p>Несложные рецепты салатов с кукурузой и колбасой часто выручают работающую хозяйку. Да и для холостяка, не слишком увлекающегося кулинарией,
+                    не составит проблемы приготовить такой салат.</p>
+                    <a class="card__view-all" href="page-recipe--item">посмотреть полностью</a>
+                  </div>
+              </div>
+            </div>
+            <div class="card card--recipe">
+              <div class="card__body">
+                <div class="card__photo">
+                  <img src="img/demo-recipe-pict-02.jpg" alt="Card image cap">
+                </div>
+                <div class="card__name">
+                  <h4 class="card__title">Колбасы варено-копченые и полукопченые</h4>
+                </div>
+                <div class="card__caption">
+                  <p>Несложные рецепты салатов с кукурузой и колбасой часто выручают работающую хозяйку. Да и для холостяка, не слишком увлекающегося кулинарией,
+                    не составит проблемы приготовить такой салат.</p>
+                    <a class="card__view-all" href="page-recipe--item">посмотреть полностью</a>
+                  </div>
+              </div>
+            </div>
+            <div class="card card--recipe">
+              <div class="card__body">
+                <div class="card__photo">
+                  <img src="img/demo-recipe-pict-01.jpg" alt="Card image cap">
+                </div>
+                <div class="card__name">
+                  <h4 class="card__title">Колбасы варено-копченые и полукопченые</h4>
+                </div>
+                <div class="card__caption">
+                  <p>Несложные рецепты салатов с кукурузой и колбасой часто выручают работающую хозяйку. Да и для холостяка, не слишком увлекающегося кулинарией,
+                    не составит проблемы приготовить такой салат.</p>
+                    <a class="card__view-all" href="page-recipe--item">посмотреть полностью</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pagination">
+            <ul class="pagination__list">
+              <li><a href="" class="pagination__item"><span class="pagination__icon-left">←</span></a></li>
+              <li><span class="pagination__item  pagination__item--active">1</span></li>
+              <li><a href="" class="pagination__item">2</a></li>
+              <li><a href="" class="pagination__item">3</a></li>
+              <li><a href="" class="pagination__item">...</a></li>
+              <li><a href="" class="pagination__item">8</a></li>
+              <li><a href="" class="pagination__item"><span class="pagination__icon-right">→</span></a></li>
+            </ul>
+          </div>
+
+        </div>
 
       </main>
 
