@@ -8,18 +8,54 @@
   background-image: url("../img/food-designer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right center;
   padding: 30px 0;
-  &__wrap {
+  display: none;
+  @media (min-width: $screen-xl) {
+    display: block;
+  }
+  &__wrapper {
     @include container;
   }
-  &__calculation-col {
-    color: #fff;
+  &__inner {
+    @include row;
   }
-  &__result-col {
-
+  &__calc {
+    @include make-col(12);
+    @media (min-width: $screen-xl) {
+      @include make-col(8);
+    }
+  }
+  &__result {
+    @include make-col(12);
+    @media (min-width: $screen-xl) {
+      @include make-col(4);
+    }
   }
   &__title {
+    color: #fff;
+    font-size: 30px;
     text-transform: uppercase;
-    margin-top: 0;
+    overflow-x: hidden;
+    span {
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 2px;
+        background: url("../img/dashed-bg.png");
+        background-repeat: repeat-x;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1000px;
+        left: 100%;
+        margin-left: 15px;
+      }
+    }
+  }
+  &__calculate {}
+  &__calculate-part {
+    margin-bottom: 25px;
   }
 }

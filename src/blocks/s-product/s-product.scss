@@ -25,6 +25,10 @@
       @include sprite($btn-arrow);
       display: block;
     }
+    &:hover,
+    &:focus {
+      color: #f9f288;
+    }
   }
   &__name {
     font-family: "Melo";

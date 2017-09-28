@@ -401,6 +401,10 @@ $main-menu-mobile-width:      334px !default;
       border-radius: $border-radius;
       transition: opacity $transition-time, box-shadow $transition-time;
 
+      &--faq {
+        text-align: center;
+      }
+
       // придется жестко зафиксировать с наследованием, ибо возможно меню 3го уровня
       #{$block-name}__item--show-child > & {
         opacity: 1;

@@ -83,7 +83,11 @@
     "coverage-map": [],
     "reviews": [],
     "recipe": [],
-    "recipe-carousel": []
+    "recipe-carousel": [],
+    "result": [],
+    "ingredients": [],
+    "main-kit": [],
+    "second-kit": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

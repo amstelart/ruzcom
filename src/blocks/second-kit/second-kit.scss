@@ -1,0 +1,68 @@
+// В этом файле должны быть стили для БЭМ-блока second-kit, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.second-kit {
+
+  $block-name:                &; // #{$block-name}__element {}
+
+  &__title {
+    font-family: "Melo";
+    font-size: 30px;
+    color: #fcf282;
+    margin-top: 0;
+  }
+  &__board {
+    background-image: url(../img/second-kit-board.jpg);
+    background-size: cover;
+    box-shadow: 3px 18px 6.09px 0.91px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    padding: 15px 35px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &__item {
+    cursor: pointer;
+    height: 115px;
+    margin: 15px 25px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 115px;
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 8px 6px 1px rgba(0, 0, 0, 0.35);
+    transition: box-shadow .2s;
+    // &:hover,
+    // &:focus {
+    //   box-shadow: 1px 6px 4px 1px rgba(0, 0, 0, 0.35);
+    // }
+    &--selected {
+      box-shadow: none;
+      &:before {
+        content: "";
+        z-index: 1;
+        width: 135px;
+        height: 135px;
+        display: block;
+        background: rgba(0, 0, 0, 0.48);
+        border-radius: 50%;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        border:1px dashed #fff;
+      }
+    }
+  }
+  &__item-img {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 115px;
+    height: 115px;
+  }
+
+}
