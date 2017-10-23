@@ -118,6 +118,27 @@ $z-index-modal:               100 !default;
       align-items: center;
     }
   }
+  &--region {
+    #{$block-name}__title {
+      font-size: 30px;
+      color: #5d1900;
+    }
+    #{$block-name}__content {
+      padding: 20px 40px;
+    }
+    .form {
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    }
+    .field-select__select {
+      border-color: #000;
+      background-image: url(../img/dropdown-icon.png);
+      background-size: 30px 16px;
+      background-position: right 20px center;
+    }
+  }
+
 }
 
 
