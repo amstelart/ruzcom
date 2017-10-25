@@ -289,7 +289,7 @@
           <form action="https://httpbin.org/post" class="form form__accept-partners" method="post">
             <div class="form__header">
                 <div class="region">
-                  <span><a href="#">Выбрать регион</a></span>
+                  <span><a href="#modal-region" data-toggle="modal">Выбрать регион</a></span>
                 </div>
             </div>
             <div class="form__body">
@@ -442,6 +442,47 @@
     </div>
 
   </div>
+
+  <div id="modal-region" class="modal modal--region" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header">
+          <span class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+          <h4 class="modal__title">Выберите регион</h4>
+        </div>
+        <div class="modal__body">
+          <form action="https://httpbin.org/post" class="form" method="post">
+            <label class="field-select">
+              <span class="field-select__select-wrap">
+                <select class="field-select__select">
+                  <optgroup label="Центральный федеральный округ">
+                    <option>Белгородская область (Белгород)</option>
+                    <option>Брянская область (Брянск)</option>
+                    <option>Владимирская область (Владимир)</option>
+                    <option>Воронежская область (Воронеж)</option>
+                    <option>Ивановская область (Иваново)</option>
+                    <option>Калужская область (Калуга)</option>
+                    <option>Костромская область (Кострома)</option>
+                    <option>Курская область (Курск)</option>
+                    <option>Липецкая область (Липецк)</option>
+                    <option>Москва</option>
+                    <option>Московская область (Москва)</option>
+                    <option>Орловская область (Орел)</option>
+                    <option>Рязанская область (Рязань)</option>
+                  </optgroup>
+                </select>
+              </span>
+            </label>
+          </form>
+        </div>
+        <!-- <div class="modal__footer">
+          <button type="button" class="btn" data-dismiss="modal">Закрыть</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
   <script src="js/script.min.js"></script>
 
 </body>
