@@ -162,14 +162,6 @@ $main-menu-mobile-width:      334px !default;
           padding: 4px 0 !important;
           box-shadow: $shadow;
         }
-
-        #{$block-name}__lvl--contacts {
-          padding: 18px 30px 10px 30px !important;
-
-          @media (max-width: ($screen-xl - 1)) {
-            display: none !important;
-          }
-        }
       }
     }
   }
@@ -430,26 +422,6 @@ $main-menu-mobile-width:      334px !default;
 
         #{$block-name}__item--show-child & {
           padding: 18px 30px 10px 30px;
-        }
-      }
-    }
-
-    &--faq {
-
-      @media (min-width: $screen-xl) {
-
-        #{$block-name}__item--more & {
-          padding-top: 8px;
-          padding-bottom: 8px;
-        }
-
-        #{$block-name}__item--more #{$block-name}__sub-list & {
-          box-shadow: 4px 4px 40px rgba(72, 72, 72, 0.35);
-        }
-
-        #{$block-name}__item--more & #{$block-name}__sub-link {
-          padding-top: 10px;
-          padding-bottom: 10px;
         }
       }
     }
