@@ -8,16 +8,15 @@
 
   position: relative;
   z-index: 1;
-  background-image: url("../img/m-products-bg.jpg");
+  // background-image: url("../img/m-products-bg.jpg");
+  background-color: #e7e0b9;
   padding-top: 5px;
   padding-bottom: 5px;
   @media (min-width: $screen-xl) {
-    background-image: url("../img/products-bg.png");
+    // background-image: url("../img/products-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 60px 0 120px;
-    margin-top: -55px;
-    margin-bottom: -55px;
+    padding: 30px 0 35px;
   }
   &__wrap {
     @include container;

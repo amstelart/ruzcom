@@ -38,6 +38,7 @@
   }
   &__card-wrap {
     @include row;
+    justify-content: center;
   }
   .card {
     @include make-col(12);

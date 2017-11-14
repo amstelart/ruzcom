@@ -85,10 +85,13 @@
       @include make-col(4);
     }
     padding: 20px;
+    text-decoration: none;
     border: 2px solid transparent;
     border-radius: 20px;
-    &:hover {
+    &:hover,
+    &:focus {
       border: 2px dashed #fff;
+      text-decoration: none;
       cursor: pointer;
     }
     &__name {
