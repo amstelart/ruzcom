@@ -12,6 +12,55 @@
   &__item {
     display: flex;
     color: #fff;
+
+    &--first {
+      display: block;
+
+      #{$block-name}__title {
+        text-align: center;
+        overflow-x: hidden;
+        margin-top: 20px;
+        span {
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            height: 2px;
+            background: url(../img/dashed-bg.png);
+            background-repeat: repeat-x;
+            top: 60%;
+            transform: translateY(-40%);
+            width: 1000px;
+            right: 100%;
+            margin-right: 15px;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            display: block;
+            height: 2px;
+            background: url(../img/dashed-bg.png);
+            background-repeat: repeat-x;
+            top: 60%;
+            transform: translateY(-40%);
+            width: 1000px;
+            left: 100%;
+            margin-left: 15px;
+          }
+        }
+      }
+
+      #{$block-name}__image {
+        margin-bottom: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
+        &:before {
+          display: none;
+        }
+      }
+    }
+
   }
   &__col {
     &--left {
@@ -107,6 +156,15 @@
     &:focus {
       @include sprite($right-arrow-hover);
     }
+  }
+
+  &__caption {
+    color: #c5fafa;
+    font-family: "Bad Script";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.6;
+    text-transform: inherit;
   }
 
 }
