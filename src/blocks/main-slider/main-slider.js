@@ -4,6 +4,7 @@ $(document).ready(function(){
     items: 1,
     nav: true,
     dots: false,
+    autoHeight:true,
     // animateOut: 'fadeOut',
     loop: true,
     center: true
