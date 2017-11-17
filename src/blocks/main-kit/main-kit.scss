@@ -29,6 +29,11 @@
         border-color: #fcf282;
       }
     }
+
+    &.disabled {
+      pointer-events: none;
+    }
+
     &--active {
       border: 1px dashed #fff;
       &:after {
