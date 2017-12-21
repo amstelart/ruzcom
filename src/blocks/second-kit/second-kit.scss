@@ -22,7 +22,22 @@
     justify-content: space-around;
     flex-wrap: wrap;
   }
+
+  &__header {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__header-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   &__item {
+    text-decoration: none;
     cursor: pointer;
     height: 115px;
     margin: 15px 25px;
@@ -80,6 +95,14 @@
     border-radius: 50%;
     width: 115px;
     height: 115px;
+  }
+
+  &__item-title {
+    color: #4e0d1d;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1;
   }
 
 }

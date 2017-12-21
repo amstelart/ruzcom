@@ -17,14 +17,14 @@ ymaps.ready(function() {
 
 	if (document.getElementById('contacts__map_02')) {
 		var myMap_02 = new ymaps.Map('contacts__map_02', {
-			center: [55.589447, 37.912840],
+			center: [55.589625, 37.911480],
 			zoom: 16
 		});
 
 		myMap_02.geoObjects
-			.add(new ymaps.Placemark([55.589447, 37.912840], {
+			.add(new ymaps.Placemark([55.589625, 37.911480], {
 				balloonContent: 'цвет <strong>голубой</strong>',
-				iconCaption: 'улица Степана Степанова, 9Г'
+				iconCaption: 'улица Степана Степанова, 30А'
 			}, {
 				preset: 'islands#redCircleDotIconWithCaption',
 				iconCaptionMaxWidth: '200'

@@ -1,98 +1,98 @@
 // В этом файле должны быть стили для БЭМ-блока main-kit, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
-.main-kit {
-
-  $block-name:                &; // #{$block-name}__element {}
-  @include row;
-
-  &__item {
-    @media (min-width: $screen-lg) {
-      @include  make-col(6);
-    }
-    @media (min-width: $screen-xl) {
-      @include  make-col(4);
-    }
-    display: flex;
-    align-items: center;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 30px 10px 10px;
-    border-radius: 20px;
-    position: relative;
-    border: 1px solid transparent;
-    &:hover,
-    &:focus {
-      color: #fcf282;
-      #{$block-name}__icon {
-        border-color: #fcf282;
-      }
-    }
-
-    &--active {
-      border: 1px dashed #fff;
-      &:after {
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 9px;
-        width: 20px;
-        height: 12px;
-        border-bottom: 4px solid #fff;
-        border-left: 4px solid #fff;
-        z-index: 3;
-        transform: translateX(-10px) rotate(-45deg);
-      }
-      &:before {
-        content: '';
-        position: absolute;
-        border-radius: 20px;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(0, 0, 0, 0.3);
-      }
-      &:hover,
-      &:focus {
-        color: #fff;
-        #{$block-name}__icon {
-          border-color: #fff;
-        }
-      }
-    }
-
-    &.disabled {
-      pointer-events: none;
-    }
-
-  }
-  &__icon {
-    width: 55px;
-    height: 55px;
-    flex: 0 0 55px;
-    margin-right: 15px;
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-    border: 2px solid #fff;
-    box-shadow: 1px 8px 6.09px 0.91px rgba(0, 0, 0, 0.35);
-  }
-  &__icon-image {
-    object-fit: cover;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-  &__name {
-    font-size: 16px;
-    line-height: 1.3;
-    font-weight: 700;
-  }
-  &__icon,
-  &__name {
-    z-index: 2;
-  }
-
-}
+//
+// .main-kit {
+//
+//   $block-name:                &; // #{$block-name}__element {}
+//   @include row;
+//
+//   &__item {
+//     @media (min-width: $screen-lg) {
+//       @include  make-col(6);
+//     }
+//     @media (min-width: $screen-xl) {
+//       @include  make-col(4);
+//     }
+//     display: flex;
+//     align-items: center;
+//     color: #fff;
+//     text-decoration: none;
+//     padding: 10px 30px 10px 10px;
+//     border-radius: 20px;
+//     position: relative;
+//     border: 1px solid transparent;
+//     &:hover,
+//     &:focus {
+//       color: #fcf282;
+//       #{$block-name}__icon {
+//         border-color: #fcf282;
+//       }
+//     }
+//
+//     &--active {
+//       border: 1px dashed #fff;
+//       &:after {
+//         content: '';
+//         position: absolute;
+//         right: 0;
+//         top: 9px;
+//         width: 20px;
+//         height: 12px;
+//         border-bottom: 4px solid #fff;
+//         border-left: 4px solid #fff;
+//         z-index: 3;
+//         transform: translateX(-10px) rotate(-45deg);
+//       }
+//       &:before {
+//         content: '';
+//         position: absolute;
+//         border-radius: 20px;
+//         top: 0;
+//         bottom: 0;
+//         left: 0;
+//         right: 0;
+//         background: rgba(0, 0, 0, 0.3);
+//       }
+//       &:hover,
+//       &:focus {
+//         color: #fff;
+//         #{$block-name}__icon {
+//           border-color: #fff;
+//         }
+//       }
+//     }
+//
+//     &.disabled {
+//       pointer-events: none;
+//     }
+//
+//   }
+//   &__icon {
+//     width: 55px;
+//     height: 55px;
+//     flex: 0 0 55px;
+//     margin-right: 15px;
+//     border-radius: 50%;
+//     overflow: hidden;
+//     position: relative;
+//     border: 2px solid #fff;
+//     box-shadow: 1px 8px 6.09px 0.91px rgba(0, 0, 0, 0.35);
+//   }
+//   &__icon-image {
+//     object-fit: cover;
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//   }
+//   &__name {
+//     font-size: 16px;
+//     line-height: 1.3;
+//     font-weight: 700;
+//   }
+//   &__icon,
+//   &__name {
+//     z-index: 2;
+//   }
+//
+// }
