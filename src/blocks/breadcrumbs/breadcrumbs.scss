@@ -8,6 +8,7 @@ $text-color:                  hsl(0, 0%, 10%) !default;
 
 .breadcrumbs {
   font-size: $font-size--small;
+  padding-left: 0;
 
   &__item {
     display: inline-block;
